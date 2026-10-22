@@ -64,3 +64,4 @@ npm run build
 ## 📄 License
 
 All rights reserved © 2026 H-S Interiors.
+"# hs-interiors" 
