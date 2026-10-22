@@ -65,3 +65,4 @@ npm run build
 
 All rights reserved © 2026 H-S Interiors.
 "# hs-interiors" 
+"# hs-interiors" 
