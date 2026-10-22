@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H-S Interiors — Luxury Interior Design & Architecture in Gujranwala</title>
+  <meta name="author" content="H-S Interiors" />
+  <meta name="description" content="H-S Interiors creates timeless residential and commercial interiors in Gujranwala and across Pakistan. Book a free design consultation today." />
+  <meta property="og:title" content="H-S Interiors — Luxury Interior Design & Architecture in Gujranwala" />
+  <meta property="og:description" content="H-S Interiors creates timeless residential and commercial interiors in Gujranwala and across Pakistan. Book a free design consultation today." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
+  <meta name="theme-color" content="#12100F" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#12100F',
+            foreground: '#F5F2EB',
+            card: '#1C1917',
+            secondary: '#181514',
+            muted: '#262320',
+            'muted-foreground': '#ABA396',
+            gold: '#C59B27',
+            'gold-soft': '#E5C98A',
+            charcoal: '#0E0D0C',
+            cream: '#F5F2EB',
+            whatsapp: '#25D366',
+            border: '#2E2A27',
+            input: '#3D3833',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Jost"', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 15px 45px -10px rgba(0, 0, 0, 0.8), 0 0 35px -15px rgba(197, 155, 39, 0.35)',
+          },
+          backgroundImage: {
+            'hero-overlay': 'linear-gradient(90deg, rgba(14, 12, 11, 0.92) 0%, rgba(14, 12, 11, 0.72) 55%, rgba(14, 12, 11, 0.45) 100%)',
+          },
+          keyframes: {
+            kenburns: {
+              '0%': { transform: 'scale(1.05)' },
+              '100%': { transform: 'scale(1.15)' },
+            },
+          },
+          animation: {
+            kenburns: 'kenburns 12s ease-out forwards',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      --gold: #C59B27;
+      --charcoal: #0E0D0C;
+      --cream: #F5F2EB;
+      --background: #12100F;
+      --foreground: #F5F2EB;
+    }
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Jost', sans-serif;
+      color-scheme: dark;
+    }
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      overflow-x: hidden;
+    }
+    .eyebrow {
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+    @keyframes kenburns {
+      0% { transform: scale(1.05); }
+      100% { transform: scale(1.15); }
+    }
+    .animate-kenburns {
+      animation: kenburns 12s ease-out forwards;
+    }
+    ::selection {
+      background-color: var(--gold);
+      color: #12100F;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0E0D0C; }
+    ::-webkit-scrollbar-thumb { background: #262320; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C59B27; }
+  </style>
+</head>
+<body class="selection:bg-gold selection:text-charcoal font-sans antialiased bg-background text-foreground">
+
+  <!-- Header / Navbar -->
+  <header id="main-header" class="fixed inset-x-0 top-0 z-40 transition-all duration-500 bg-transparent py-6">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+      <a href="#home" class="flex items-center gap-3.5 group leading-none">
+        <div class="relative grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-gold/40 bg-gradient-to-br from-[#221E1B] via-[#161413] to-[#0D0B0A] shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:border-gold">
+          <span class="font-serif text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-[#FBF2D5] via-[#E5C365] to-[#C59B27]">
+            HS
+          </span>
+        </div>
+        <div class="leading-tight">
+          <span id="logo-text" class="block font-serif text-2xl font-semibold tracking-[0.12em] text-cream transition-colors group-hover:text-gold">
+            H-S <span class="text-gold">INTERIORS</span>
+          </span>
+          <span id="logo-sub" class="mt-0.5 block text-[0.6rem] uppercase tracking-[0.3em] text-cream/70">
+            Interior Architecture & Design
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-8 lg:flex">
+        <a href="#home" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">Home</a>
+        <a href="#services" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">Services</a>
+        <a href="#portfolio" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">Portfolio</a>
+        <a href="#about" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">About Us</a>
+        <a href="#reviews" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">Reviews</a>
+        <a href="#contact" class="nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium">Contact</a>
+        <a href="https://wa.me/923249707424?text=Hello%20H-S%20Interiors%2C%20I'd%20like%20to%20book%20a%20free%20consultation." target="_blank" rel="noreferrer" class="bg-gold px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#12100F] transition-all hover:bg-gold-soft shadow-md rounded-lg hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+          Book Free Consultation
+        </a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="mobile-toggle" class="lg:hidden text-cream" aria-label="Menu">
+        <i data-lucide="menu" id="menu-icon" class="h-6 w-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden flex-col gap-4 border-t border-border bg-background/98 px-6 py-6 backdrop-blur lg:hidden shadow-2xl">
+      <a href="#home" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">Home</a>
+      <a href="#services" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">Services</a>
+      <a href="#portfolio" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">Portfolio</a>
+      <a href="#about" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">About Us</a>
+      <a href="#reviews" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">Reviews</a>
+      <a href="#contact" class="font-serif text-xl text-foreground hover:text-gold" onclick="toggleMobileMenu()">Contact</a>
+      <a href="https://wa.me/923249707424?text=Hello%20H-S%20Interiors%2C%20I'd%20like%20to%20book%20a%20free%20consultation." target="_blank" rel="noreferrer" class="mt-2 bg-gold px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#12100F] rounded-lg">
+        Book Free Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section: With Dual Scrims and High-Contrast 100% Readable Text -->
+  <section id="home" class="relative h-screen min-h-[640px] overflow-hidden bg-charcoal">
+    <div id="hero-slider">
+      <img src="public/images/work-3.jpg" alt="Luxury interior 4K" class="hero-slide absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] animate-kenburns opacity-100" />
+      <img src="public/images/work-12.jpg" alt="Luxury interior 4K" class="hero-slide absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] opacity-0" />
+      <img src="public/images/work-9.jpg" alt="Luxury interior 4K" class="hero-slide absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] opacity-0" />
+    </div>
+
+    <!-- Dual Scrim Overlays for crystal-clear readability over ANY background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40 z-10 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#12100F] via-transparent to-black/50 z-10 pointer-events-none"></div>
+
+    <div class="relative z-20 mx-auto flex h-full max-w-7xl flex-col justify-center px-6">
+      <div class="mb-6">
+        <span class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-black/60 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-gold-soft backdrop-blur-md font-medium shadow-lg">
+          <i data-lucide="map-pin" class="h-3.5 w-3.5 text-gold-soft"></i> Gujranwala · Pakistan
+        </span>
+      </div>
+
+      <h1 class="max-w-4xl font-serif text-5xl leading-[1.05] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] md:text-7xl lg:text-8xl">
+        Transforming Spaces into <em class="font-normal italic text-gold-soft drop-shadow-[0_2px_12px_rgba(197,155,39,0.5)]">Timeless Luxury</em>
+      </h1>
+
+      <!-- Subtitle Description: 100% clearly visible across all 3 slides -->
+      <div class="mt-8 max-w-2xl rounded-2xl border border-white/15 bg-black/50 p-5 sm:p-6 backdrop-blur-md shadow-2xl">
+        <p class="text-base sm:text-lg md:text-xl font-light leading-relaxed text-[#FAF7F2] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+          Bespoke residential and commercial interiors — designed, crafted and delivered by our studio in Gujranwala for clients across Pakistan.
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#portfolio" class="group inline-flex items-center gap-3 bg-gold px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#12100F] transition-all hover:bg-gold-soft hover:shadow-[0_0_25px_rgba(197,155,39,0.5)] rounded-xl shadow-md">
+          View Portfolio <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+        </a>
+        <a href="https://wa.me/923249707424" target="_blank" rel="noreferrer" class="inline-flex items-center gap-3 border border-white/40 bg-black/40 px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-md transition-all hover:border-white hover:bg-white hover:text-charcoal rounded-xl shadow-lg">
+          <i data-lucide="message-circle" class="h-4 w-4 text-gold-soft"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Slide Dots -->
+      <div class="absolute bottom-10 left-6 flex gap-2">
+        <button onclick="setHeroSlide(0)" class="hero-dot h-[3px] rounded-full transition-all duration-300 w-12 bg-gold shadow-md" aria-label="Slide 1"></button>
+        <button onclick="setHeroSlide(1)" class="hero-dot h-[3px] rounded-full transition-all duration-300 w-6 bg-white/40" aria-label="Slide 2"></button>
+        <button onclick="setHeroSlide(2)" class="hero-dot h-[3px] rounded-full transition-all duration-300 w-6 bg-white/40" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section: Clean, Logo & Name side by side, Description Below, NO redundant footer -->
+  <section id="services" class="relative px-6 py-28 overflow-hidden bg-background">
+    <div class="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gold/5 blur-[120px]"></div>
+
+    <div class="relative mx-auto max-w-7xl">
+      <div class="reveal mx-auto mb-16 max-w-2xl text-center">
+        <p class="eyebrow mb-4">What We Do</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-cream">Ceiling to floor, all under one roof</h2>
+        <p class="mt-5 font-light text-muted-foreground leading-relaxed">False ceilings, gypsum, PVC pelling, wallpapers, custom media walls and vinyl flooring — done by our own team.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- 01 False Ceiling -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/work-10.jpg" alt="False Ceiling" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">01</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="panels-top-left" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  False Ceiling
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              Modern false ceiling designs with hidden lighting, cornices and flawless finishing for every room.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- 02 Gypsum Work -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]" style="transition-delay: 70ms">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/work-1.jpg" alt="Gypsum Work" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">02</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="hammer" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  Gypsum Work
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              Gypsum ceilings, partitions and decorative details — smooth, strong and made to last.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- 03 PVC Pelling -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]" style="transition-delay: 140ms">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/work-8.jpg" alt="PVC Pelling" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">03</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="layers" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  PVC Pelling
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              Premium PVC pelling for walls and ceilings — elegant, durable, quick to install and easy to clean.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- 04 Wallpapers -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]" style="transition-delay: 210ms">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/hero-bg.jpg" alt="Wallpapers" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">04</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="frame" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  Wallpapers
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              A wide range of imported wallpapers to add texture, colour and character to your space.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- 05 Customized Media Wall -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]" style="transition-delay: 280ms">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/work-3.jpg" alt="Customized Media Wall" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">05</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="tv" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  Customized Media Wall
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              Bespoke TV media walls with paneling, sheet work and lighting, designed to measure.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- 06 Vinyl Flooring -->
+        <div class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]" style="transition-delay: 350ms">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="public/images/vinyl-1.jpeg" alt="Vinyl Flooring" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90"></div>
+            <span class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md group-hover:border-gold group-hover:text-gold transition-colors">06</span>
+            <span class="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+              <i data-lucide="sparkles" class="h-3 w-3 text-gold"></i> In-House Team
+            </span>
+          </div>
+
+          <div class="p-7">
+            <!-- Logo ke samne Name -->
+            <div class="flex items-center gap-4">
+              <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                <i data-lucide="rows-3" class="h-6 w-6"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                  Vinyl Flooring
+                </h3>
+              </div>
+            </div>
+            <!-- Description neechy -->
+            <p class="mt-4 font-light text-sm leading-relaxed text-cream/75">
+              Wood-look vinyl flooring that is waterproof, scratch-resistant and quick to lay — warm underfoot and easy to clean.
+            </p>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </div>
+
+        <!-- Consultation Banner -->
+        <a href="https://wa.me/923249707424?text=Hello%20H-S%20Interiors%2C%20I'd%20like%20to%20book%20a%20free%20consultation." target="_blank" rel="noreferrer" class="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-r from-[#181514] via-[#24201D] to-[#181514] p-10 text-cream shadow-soft transition-all duration-500 hover:border-gold hover:shadow-[0_20px_50px_-15px_rgba(197,155,39,0.35)] md:col-span-2 lg:col-span-3">
+          <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold/15 blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
+          <div class="relative">
+            <p class="eyebrow flex items-center gap-2 text-gold-soft">
+              <i data-lucide="sparkles" class="h-3.5 w-3.5 text-gold-soft"></i> Free Consultation
+            </p>
+            <h3 class="mt-4 font-serif text-3xl md:text-4xl text-cream">Not sure where to start? Let's talk with our lead designer.</h3>
+            <p class="mt-3 max-w-2xl font-light text-cream/75 leading-relaxed">Get itemised estimates, material samples, and 3D layout options for your home or commercial project in Gujranwala.</p>
+          </div>
+          <div class="relative mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-cream/10 pt-6">
+            <span class="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-gold font-medium transition-transform group-hover:translate-x-2">
+              Book now on WhatsApp <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </span>
+            <span class="text-xs uppercase tracking-widest text-cream/50">Response within 30 minutes</span>
+          </div>
+          <span class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-secondary px-6 py-28 border-y border-border/40">
+    <div class="mx-auto max-w-7xl">
+      <div class="reveal mx-auto mb-16 max-w-2xl text-center">
+        <p class="eyebrow mb-4">Portfolio</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-cream">Selected projects</h2>
+      </div>
+
+      <!-- Categories Filter -->
+      <div id="filter-buttons" class="reveal mb-12 flex flex-wrap justify-center gap-2">
+        <button onclick="filterPortfolio('All')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-semibold bg-gold text-[#12100F] shadow-md">All</button>
+        <button onclick="filterPortfolio('False Ceiling')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">False Ceiling</button>
+        <button onclick="filterPortfolio('Gypsum Work')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">Gypsum Work</button>
+        <button onclick="filterPortfolio('PVC Pelling')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">PVC Pelling</button>
+        <button onclick="filterPortfolio('Wallpapers')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">Wallpapers</button>
+        <button onclick="filterPortfolio('Media Wall')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">Media Wall</button>
+        <button onclick="filterPortfolio('Vinyl Flooring')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm">Vinyl Flooring</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="portfolio-grid" class="gap-6 columns-1 sm:columns-2 lg:columns-3"></div>
+
+      <!-- Before / After -->
+      <div class="mt-24 grid items-center gap-12 lg:grid-cols-[1fr_2fr]">
+        <div class="reveal">
+          <p class="eyebrow mb-4">Before / After</p>
+          <h3 class="font-serif text-4xl text-cream">From bare shell to signature home</h3>
+          <p class="mt-5 font-light leading-relaxed text-muted-foreground">Drag the handle to compare an empty space with a finished, styled living area.</p>
+        </div>
+
+        <div id="before-after-container" class="reveal relative aspect-[16/10] cursor-ew-resize select-none overflow-hidden rounded-2xl border border-border shadow-soft touch-none">
+          <img src="public/images/after.jpg" alt="After luxury renovation by H-S Interiors" class="absolute inset-0 h-full w-full object-cover" draggable="false" />
+          <img id="before-img" src="public/images/before.jpg" alt="Before renovation empty bare shell" class="absolute inset-0 h-full w-full object-cover" style="clip-path: inset(0 50% 0 0);" draggable="false" />
+          <span class="absolute left-4 top-4 rounded-full bg-charcoal/80 px-3.5 py-1 text-xs uppercase tracking-widest text-cream backdrop-blur-md">Before</span>
+          <span class="absolute right-4 top-4 rounded-full bg-gold px-3.5 py-1 text-xs uppercase tracking-widest text-[#12100F] font-semibold backdrop-blur-md">After</span>
+          <div id="slider-handle" class="absolute inset-y-0 w-[2px] bg-white shadow-lg" style="left: 50%;">
+            <span class="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-charcoal shadow-xl border border-border">
+              <i data-lucide="move-horizontal" class="h-5 w-5"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 py-28 bg-background">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid items-center gap-16 lg:grid-cols-2">
+        <div class="reveal relative">
+          <img src="public/images/work-7.jpg" alt="H-S Interiors Craftsmanship" loading="lazy" class="w-full object-cover shadow-soft aspect-[4/3] rounded-2xl border border-border" />
+          <div class="absolute -bottom-8 -right-4 rounded-2xl border border-gold/30 bg-charcoal p-8 text-white shadow-xl md:-right-8">
+            <p class="font-serif text-4xl text-gold-soft font-medium">100%</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.2em] text-white/80">In-house team & finishing</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <p class="eyebrow mb-4">About Us</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-cream">Crafted in Gujranwala, admired across Pakistan</h2>
+          <p class="mt-6 font-light leading-relaxed text-muted-foreground">H-S Interiors is a design and build studio rooted in Javiad Sheet Market. We combine architectural thinking with hands-on craftsmanship — from precision sheet work and custom joinery to complete turnkey renovations.</p>
+          <p class="mt-4 font-light leading-relaxed text-muted-foreground">Our promise is simple: spaces that feel calm, considered and unmistakably yours.</p>
+        </div>
+      </div>
+
+      <!-- 4 Pillars -->
+      <div class="mt-28 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal rounded-2xl border border-border border-t-2 border-t-gold bg-card p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-gold/10 text-gold mb-6 border border-gold/20">
+            <i data-lucide="ruler" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-cream font-medium">Tailored Designs</h3>
+          <p class="mt-3 text-sm font-light text-muted-foreground leading-relaxed">Every space is drawn from scratch for you — never a template.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-border border-t-2 border-t-gold bg-card p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style="transition-delay: 80ms">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-gold/10 text-gold mb-6 border border-gold/20">
+            <i data-lucide="wallet" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-cream font-medium">Transparent Budgeting</h3>
+          <p class="mt-3 text-sm font-light text-muted-foreground leading-relaxed">Itemised quotes with no hidden costs or surprises.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-border border-t-2 border-t-gold bg-card p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style="transition-delay: 160ms">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-gold/10 text-gold mb-6 border border-gold/20">
+            <i data-lucide="gem" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-cream font-medium">Premium Craftsmanship</h3>
+          <p class="mt-3 text-sm font-light text-muted-foreground leading-relaxed">Hand-picked materials and skilled in-house craftsmen.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-border border-t-2 border-t-gold bg-card p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style="transition-delay: 240ms">
+          <div class="grid h-12 w-12 place-items-center rounded-xl bg-gold/10 text-gold mb-6 border border-gold/20">
+            <i data-lucide="clock" class="h-6 w-6"></i>
+          </div>
+          <h3 class="font-serif text-2xl text-cream font-medium">On-Time Execution</h3>
+          <p class="mt-3 text-sm font-light text-muted-foreground leading-relaxed">Clear timelines, managed daily, delivered as promised.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section id="reviews" class="bg-charcoal px-6 py-28 text-cream">
+    <div class="mx-auto max-w-4xl text-center">
+      <p class="eyebrow mb-4 text-gold-soft">Client Reviews</p>
+
+      <div class="mb-8 flex justify-center gap-1">
+        <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+        <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+        <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+        <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+        <i data-lucide="star" class="h-5 w-5 fill-gold text-gold"></i>
+      </div>
+
+      <blockquote id="review-text" class="font-serif text-3xl italic leading-snug md:text-4xl transition-opacity duration-500">
+        “H-S Interiors transformed our living room and kitchen beyond what we imagined. Finishing quality is outstanding and the team was always on time.”
+      </blockquote>
+
+      <p id="review-name" class="mt-8 text-sm uppercase tracking-[0.2em] text-white">Ahmed Raza</p>
+      <p id="review-place" class="mt-1 text-sm font-light text-cream/70">DC Colony, Gujranwala</p>
+
+      <div class="mt-10 flex items-center justify-center gap-6">
+        <button onclick="prevReview()" aria-label="Previous review" class="grid h-11 w-11 place-items-center rounded-full border border-cream/30 transition-colors hover:border-gold hover:text-gold text-white">
+          <i data-lucide="chevron-left" class="h-5 w-5"></i>
+        </button>
+        <div id="review-indicators" class="flex gap-2">
+          <span class="h-[2px] transition-all duration-300 w-8 bg-gold"></span>
+          <span class="h-[2px] transition-all duration-300 w-4 bg-cream/30"></span>
+          <span class="h-[2px] transition-all duration-300 w-4 bg-cream/30"></span>
+          <span class="h-[2px] transition-all duration-300 w-4 bg-cream/30"></span>
+        </div>
+        <button onclick="nextReview()" aria-label="Next review" class="grid h-11 w-11 place-items-center rounded-full border border-cream/30 transition-colors hover:border-gold hover:text-gold text-white">
+          <i data-lucide="chevron-right" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Visit Section -->
+  <section id="contact" class="px-6 py-28 bg-background">
+    <div class="mx-auto max-w-7xl">
+      <div class="reveal mx-auto mb-16 max-w-2xl text-center">
+        <p class="eyebrow mb-4">Contact & Visit</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-cream">Let's design your space</h2>
+      </div>
+
+      <div class="grid gap-12 lg:grid-cols-2">
+        <form onsubmit="handleContactSubmit(event)" class="reveal space-y-6 bg-card p-8 md:p-12 rounded-2xl border border-border shadow-soft">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <input name="name" required maxlength="80" placeholder="Full name" class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground placeholder:text-muted-foreground/60" />
+            <input name="phone" required type="tel" maxlength="20" placeholder="Phone number" class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground placeholder:text-muted-foreground/60" />
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2">
+            <select name="type" required class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground [&>option]:bg-[#1C1917] [&>option]:text-cream">
+              <option value="" disabled selected>Service needed</option>
+              <option value="False Ceiling">False Ceiling</option>
+              <option value="Gypsum Work">Gypsum Work</option>
+              <option value="PVC Pelling">PVC Pelling</option>
+              <option value="Wallpapers">Wallpapers</option>
+              <option value="Customized Media Wall">Customized Media Wall</option>
+              <option value="Vinyl Flooring">Vinyl Flooring</option>
+            </select>
+            <input name="area" required maxlength="80" placeholder="Your area / city (e.g. Satellite Town)" class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground placeholder:text-muted-foreground/60" />
+          </div>
+
+          <select name="time" class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground [&>option]:bg-[#1C1917] [&>option]:text-cream">
+            <option value="Morning (10am – 1pm)">Morning (10am – 1pm)</option>
+            <option value="Afternoon (1pm – 5pm)">Afternoon (1pm – 5pm)</option>
+            <option value="Evening (5pm – 10pm)">Evening (5pm – 10pm)</option>
+          </select>
+
+          <textarea name="message" rows="4" maxlength="1000" placeholder="Room size, design idea or anything you'd like us to know" class="w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground placeholder:text-muted-foreground/60"></textarea>
+
+          <button type="submit" class="inline-flex w-full items-center justify-center gap-3 bg-gold px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#12100F] transition-all hover:bg-gold-soft hover:shadow-[0_0_25px_rgba(197,155,39,0.4)] rounded-xl">
+            Send Enquiry <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+          <p id="form-success" class="hidden text-center text-sm font-medium text-gold">Thank you! Your message opened in WhatsApp — just press send.</p>
+        </form>
+
+        <div class="reveal flex flex-col gap-6">
+          <div class="overflow-hidden rounded-2xl border border-border shadow-soft">
+            <iframe title="H-S Interiors location" src="https://www.google.com/maps?q=558M%2B2P+Gujranwala&output=embed" class="h-72 w-full border-0 grayscale-[25%]" loading="lazy"></iframe>
+          </div>
+
+          <div class="space-y-5 bg-secondary p-8 rounded-2xl border border-border shadow-soft">
+            <div class="flex gap-4">
+              <i data-lucide="map-pin" class="mt-1 h-5 w-5 shrink-0 text-gold"></i>
+              <p class="font-light text-foreground">Javiad Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250, Pakistan</p>
+            </div>
+            <a href="tel:+923249707424" class="flex gap-4 hover:text-gold transition-colors text-foreground">
+              <i data-lucide="phone" class="h-5 w-5 text-gold"></i>
+              <span>+92 324 9707424</span>
+            </a>
+            <a href="https://wa.me/923249707424" target="_blank" rel="noreferrer" class="flex gap-4 hover:text-gold transition-colors text-foreground">
+              <i data-lucide="message-circle" class="h-5 w-5 text-gold"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <div class="flex items-center gap-4">
+              <span class="relative flex h-3 w-3">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60"></span>
+                <span class="relative inline-flex h-3 w-3 rounded-full bg-whatsapp"></span>
+              </span>
+              <span class="font-light text-foreground">Open daily until 10:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal px-6 pt-20 pb-10 text-cream border-t border-border/40">
+    <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-3">
+      <div>
+        <a href="#home" class="flex items-center gap-3.5 group leading-none">
+          <div class="relative grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-gold/40 bg-gradient-to-br from-[#221E1B] via-[#161413] to-[#0D0B0A] shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:border-gold">
+            <span class="font-serif text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-[#FBF2D5] via-[#E5C365] to-[#C59B27]">
+              HS
+            </span>
+          </div>
+          <div class="leading-tight">
+            <span class="block font-serif text-2xl font-semibold tracking-[0.12em] text-cream transition-colors group-hover:text-gold">
+              H-S <span class="text-gold">INTERIORS</span>
+            </span>
+            <span class="mt-0.5 block text-[0.6rem] uppercase tracking-[0.3em] text-cream/70">
+              Interior Architecture & Design
+            </span>
+          </div>
+        </a>
+        <p class="mt-6 max-w-xs text-sm font-light text-cream/60">Timeless interiors for homes and businesses across Pakistan.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#" aria-label="Instagram" class="grid h-10 w-10 place-items-center rounded-full border border-cream/20 transition-colors hover:border-gold hover:text-gold text-white">
+            <i data-lucide="instagram" class="h-4 w-4"></i>
+          </a>
+          <a href="#" aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-full border border-cream/20 transition-colors hover:border-gold hover:text-gold text-white">
+            <i data-lucide="facebook" class="h-4 w-4"></i>
+          </a>
+          <a href="#" aria-label="YouTube" class="grid h-10 w-10 place-items-center rounded-full border border-cream/20 transition-colors hover:border-gold hover:text-gold text-white">
+            <i data-lucide="youtube" class="h-4 w-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow mb-5 text-gold-soft">Quick Links</p>
+        <ul class="space-y-2 text-sm font-light text-cream/80">
+          <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+          <li><a href="#services" class="hover:text-gold transition-colors">Services</a></li>
+          <li><a href="#portfolio" class="hover:text-gold transition-colors">Portfolio</a></li>
+          <li><a href="#about" class="hover:text-gold transition-colors">About Us</a></li>
+          <li><a href="#reviews" class="hover:text-gold transition-colors">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="eyebrow mb-5 text-gold-soft">Contact</p>
+        <ul class="space-y-3 text-sm font-light text-cream/80">
+          <li>Javiad Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250</li>
+          <li><a href="tel:+923249707424" class="hover:text-gold transition-colors">+92 324 9707424</a></li>
+          <li><a href="https://wa.me/923249707424" target="_blank" rel="noreferrer" class="hover:text-gold transition-colors">WhatsApp: +92 324 9707424</a></li>
+          <li>Open daily until 10:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="mx-auto mt-16 max-w-7xl border-t border-cream/10 pt-8 text-center text-xs text-cream/50">
+      © 2026 H-S Interiors. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923249707424" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-white shadow-soft transition-transform hover:scale-110">
+    <i data-lucide="message-circle" class="h-7 w-7"></i>
+  </a>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-charcoal/95 p-6 backdrop-blur-md" onclick="closeModal()">
+    <button class="absolute right-6 top-6 text-cream hover:text-gold transition-colors" aria-label="Close" onclick="closeModal()">
+      <i data-lucide="x" class="h-8 w-8"></i>
+    </button>
+    <button class="absolute left-4 text-cream hover:text-gold transition-colors" aria-label="Previous" onclick="event.stopPropagation(); modalPrev()">
+      <i data-lucide="chevron-left" class="h-10 w-10"></i>
+    </button>
+    <figure onclick="event.stopPropagation()" class="max-w-5xl">
+      <img id="modal-img" src="" alt="" class="max-h-[80vh] w-auto object-contain rounded-2xl shadow-2xl mx-auto border border-white/10" />
+      <figcaption id="modal-caption" class="mt-4 text-center font-serif text-2xl text-cream"></figcaption>
+    </figure>
+    <button class="absolute right-4 text-cream hover:text-gold transition-colors" aria-label="Next" onclick="event.stopPropagation(); modalNext()">
+      <i data-lucide="chevron-right" class="h-10 w-10"></i>
+    </button>
+  </div>
+
+  <script>
+    // Portfolio Items
+    const projects = [
+      { src: 'public/images/work-3.jpg', title: 'Marble TV Wall with Wooden Slats', cat: 'Media Wall' },
+      { src: 'public/images/work-10.jpg', title: 'PVC Ceiling with Blue Cove Light', cat: 'False Ceiling', tall: true },
+      { src: 'public/images/work-1.jpg', title: 'Classic Wall Moulding Lounge', cat: 'Gypsum Work', tall: true },
+      { src: 'public/images/work-8.jpg', title: 'Fluted Panel Wall with Gold Strips', cat: 'PVC Pelling', tall: true },
+      { src: 'public/images/work-4.jpg', title: 'Grey Slat Media Wall', cat: 'Media Wall', tall: true },
+      { src: 'public/images/work-12.jpg', title: 'Warm-lit Ceiling with Spotlights', cat: 'False Ceiling' },
+      { src: 'public/images/work-7.jpg', title: 'Bedroom Marble Sheet & Pelling', cat: 'PVC Pelling' },
+      { src: 'public/images/work-13.jpg', title: 'Layered Ceiling with Gold Glow', cat: 'False Ceiling', tall: true },
+      { src: 'public/images/work-9.jpg', title: 'Black Marble Feature Wall', cat: 'Media Wall' },
+      { src: 'public/images/work-2.jpg', title: 'Wall Moulding with Brass Lights', cat: 'Gypsum Work', tall: true },
+      { src: 'public/images/work-6.jpg', title: 'Blue Fluted Wall with Mirror Panel', cat: 'PVC Pelling', tall: true },
+      { src: 'public/images/work-11.jpg', title: 'Marble-look PVC Roof', cat: 'False Ceiling', tall: true },
+      { src: 'public/images/work-5.jpg', title: 'Wooden Slat TV Unit', cat: 'Media Wall', tall: true },
+      { src: 'public/images/work-14.jpg', title: 'Diamond Ceiling Design', cat: 'False Ceiling', tall: true },
+      { src: 'public/images/work-15.jpg', title: 'Twin-fan Ceiling with LED Strips', cat: 'False Ceiling', tall: true },
+      { src: 'public/images/hero-bg.jpg', title: 'Designer Mural Wallpaper', cat: 'Wallpapers' },
+      { src: 'public/images/wallpaper-leaf.jpg', title: 'Tropical Leaf Wallpaper', cat: 'Wallpapers' },
+      { src: 'public/images/vinyl-1.jpeg', title: 'Wood-Look Vinyl Plank Flooring', cat: 'Vinyl Flooring' }
+    ];
+
+    let currentCategory = 'All';
+    let currentModalIdx = 0;
+    let filteredList = [...projects];
+
+    function renderPortfolio() {
+      const grid = document.getElementById('portfolio-grid');
+      filteredList = projects.filter(p => currentCategory === 'All' || p.cat === currentCategory);
+      const isSingle = filteredList.length === 1;
+      grid.className = 'gap-6 ' + (isSingle ? 'columns-1' : 'columns-1 sm:columns-2 lg:columns-3');
+
+      grid.innerHTML = filteredList.map((p, idx) => `
+        <button onclick="openModal(${idx})" class="group relative mb-6 block w-full overflow-hidden break-inside-avoid rounded-2xl shadow-soft text-left border border-border/60 hover:border-gold hover:shadow-[0_15px_35px_-8px_rgba(197,155,39,0.25)] transition-all duration-500">
+          <img src="${p.src}" alt="${p.title}" loading="lazy" class="w-full object-cover transition-transform duration-700 group-hover:scale-105 ${p.tall ? 'aspect-[4/5]' : (isSingle ? 'aspect-[16/9]' : 'aspect-[4/3]')}" />
+          <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent p-6 text-left opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            <span class="eyebrow text-gold-soft">${p.cat}</span>
+            <span class="mt-1 font-serif text-2xl text-white">${p.title}</span>
+          </div>
+        </button>
+      `).join('');
+    }
+
+    function filterPortfolio(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.textContent.trim() === cat) {
+          btn.className = 'filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-semibold bg-gold text-[#12100F] shadow-md';
+        } else {
+          btn.className = 'filter-btn px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm';
+        }
+      });
+      renderPortfolio();
+    }
+
+    function openModal(idx) {
+      currentModalIdx = idx;
+      const p = filteredList[idx];
+      document.getElementById('modal-img').src = p.src;
+      document.getElementById('modal-img').alt = p.title;
+      document.getElementById('modal-caption').innerHTML = `${p.title} <span class="eyebrow ml-3 text-gold-soft">${p.cat}</span>`;
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function modalNext() {
+      currentModalIdx = (currentModalIdx + 1) % filteredList.length;
+      openModal(currentModalIdx);
+    }
+
+    function modalPrev() {
+      currentModalIdx = (currentModalIdx - 1 + filteredList.length) % filteredList.length;
+      openModal(currentModalIdx);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('lightbox-modal');
+      if (!modal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowRight') modalNext();
+        if (e.key === 'ArrowLeft') modalPrev();
+      }
+    });
+
+    // Reviews Slider
+    const reviews = [
+      { name: 'Ahmed Raza', place: 'DC Colony, Gujranwala', text: 'H-S Interiors transformed our living room and kitchen beyond what we imagined. Finishing quality is outstanding and the team was always on time.' },
+      { name: 'Sana Malik', place: 'Model Town, Gujranwala', text: 'The 3D designs helped us decide quickly, and the final bedroom looks exactly like the render. Highly professional work.' },
+      { name: 'Usman Tariq', place: 'Lahore', text: 'They completed our office fit-out within budget and on schedule. Clients now compliment our workspace every week.' },
+      { name: 'Fatima Butt', place: 'Satellite Town, Gujranwala', text: 'Beautiful wardrobes and media wall with perfect sheet work. Transparent pricing and very respectful team.' }
+    ];
+    let reviewIdx = 0;
+
+    function renderReview() {
+      const r = reviews[reviewIdx];
+      const q = document.getElementById('review-text');
+      q.style.opacity = '0';
+      setTimeout(() => {
+        q.textContent = `“${r.text}”`;
+        document.getElementById('review-name').textContent = r.name;
+        document.getElementById('review-place').textContent = r.place;
+        q.style.opacity = '1';
+      }, 200);
+
+      document.getElementById('review-indicators').innerHTML = reviews.map((_, i) =>
+        `<span class="h-[2px] transition-all duration-300 ${i === reviewIdx ? 'w-8 bg-gold' : 'w-4 bg-cream/30'}"></span>`
+      ).join('');
+    }
+
+    function nextReview() {
+      reviewIdx = (reviewIdx + 1) % reviews.length;
+      renderReview();
+    }
+    function prevReview() {
+      reviewIdx = (reviewIdx - 1 + reviews.length) % reviews.length;
+      renderReview();
+    }
+    setInterval(nextReview, 7000);
+
+    // Hero Slider
+    let heroIdx = 0;
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    function setHeroSlide(idx) {
+      heroIdx = idx;
+      heroSlides.forEach((slide, i) => {
+        if (i === idx) {
+          slide.classList.remove('opacity-0');
+          slide.classList.add('opacity-100', 'animate-kenburns');
+        } else {
+          slide.classList.remove('opacity-100', 'animate-kenburns');
+          slide.classList.add('opacity-0');
+        }
+      });
+      heroDots.forEach((dot, i) => {
+        if (i === idx) {
+          dot.className = 'hero-dot h-[3px] rounded-full transition-all duration-300 w-12 bg-gold shadow-md';
+        } else {
+          dot.className = 'hero-dot h-[3px] rounded-full transition-all duration-300 w-6 bg-white/40';
+        }
+      });
+    }
+    setInterval(() => {
+      setHeroSlide((heroIdx + 1) % heroSlides.length);
+    }, 6000);
+
+    // Navbar scroll listener
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      const logoText = document.getElementById('logo-text');
+      const logoSub = document.getElementById('logo-sub');
+      const links = document.querySelectorAll('.nav-link');
+      const menuBtn = document.getElementById('mobile-toggle');
+
+      if (window.scrollY > 40) {
+        header.className = 'fixed inset-x-0 top-0 z-40 transition-all duration-500 bg-background/95 py-3 shadow-soft backdrop-blur border-b border-border';
+        logoText.className = 'block font-serif text-2xl font-semibold tracking-[0.12em] text-foreground';
+        logoSub.className = 'mt-1 block text-[0.6rem] uppercase tracking-[0.3em] text-muted-foreground';
+        links.forEach(l => l.className = 'nav-link text-sm tracking-wide text-foreground hover:text-gold transition-colors font-medium');
+        menuBtn.className = 'lg:hidden text-foreground';
+      } else {
+        header.className = 'fixed inset-x-0 top-0 z-40 transition-all duration-500 bg-transparent py-6';
+        logoText.className = 'block font-serif text-2xl font-semibold tracking-[0.12em] text-cream';
+        logoSub.className = 'mt-1 block text-[0.6rem] uppercase tracking-[0.3em] text-cream/70';
+        links.forEach(l => l.className = 'nav-link text-sm tracking-wide text-cream hover:text-gold transition-colors font-medium');
+        menuBtn.className = 'lg:hidden text-cream';
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    }
+    document.getElementById('mobile-toggle').addEventListener('click', toggleMobileMenu);
+
+    // Before / After slider
+    const baContainer = document.getElementById('before-after-container');
+    const beforeImg = document.getElementById('before-img');
+    const sliderHandle = document.getElementById('slider-handle');
+    let isDragging = false;
+
+    function updateSlider(clientX) {
+      const rect = baContainer.getBoundingClientRect();
+      const pct = Math.min(100, Math.max(0, ((clientX - rect.left) / rect.width) * 100));
+      beforeImg.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      sliderHandle.style.left = `${pct}%`;
+    }
+
+    baContainer.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      updateSlider(e.clientX);
+      baContainer.setPointerCapture?.(e.pointerId);
+    });
+    baContainer.addEventListener('pointermove', (e) => {
+      if (isDragging) updateSlider(e.clientX);
+    });
+    window.addEventListener('pointerup', () => isDragging = false);
+
+    // Contact Form Submit -> WhatsApp
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const text = `Hello H-S Interiors,\n\nName: ${data.get('name')}\nPhone: ${data.get('phone')}\nProject: ${data.get('type')}\nArea: ${data.get('area')}\nBest time to call: ${data.get('time')}\n\n${data.get('message') || ''}`;
+      window.open(`https://wa.me/923249707424?text=${encodeURIComponent(text)}`, '_blank');
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+
+    // Scroll Reveal (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('in');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Initialize
+    renderPortfolio();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
