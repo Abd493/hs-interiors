@@ -37,24 +37,30 @@ export default function BeforeAfter() {
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
     >
-      {/* After image: 4K Finished Luxury Interior */}
-      <img
-        src="/images/after.jpg"
-        alt="After luxury renovation by H-S Interiors"
-        loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover"
-        draggable={false}
-      />
+      {/* After image: Fast WebP Finished Luxury Interior */}
+      <picture>
+        <source type="image/webp" srcSet="/images/after.webp" />
+        <img
+          src="/images/after.jpg"
+          alt="After luxury renovation by H-S Interiors"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+          draggable={false}
+        />
+      </picture>
 
       {/* Before image: Exact same room in raw bare-shell concrete */}
-      <img
-        src="/images/before.jpg"
-        alt="Before renovation empty bare shell"
-        loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover"
-        style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
-        draggable={false}
-      />
+      <picture>
+        <source type="image/webp" srcSet="/images/before.webp" />
+        <img
+          src="/images/before.jpg"
+          alt="Before renovation empty bare shell"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+          draggable={false}
+        />
+      </picture>
 
       {/* Badges */}
       <span className="absolute left-4 top-4 rounded-full bg-charcoal/80 px-3.5 py-1 text-xs uppercase tracking-widest text-cream backdrop-blur-md shadow-md border border-white/10">

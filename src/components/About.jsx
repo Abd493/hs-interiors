@@ -1,5 +1,6 @@
 import React from 'react';
 import { Ruler, Wallet, Gem, Clock } from 'lucide-react';
+import ProgressiveImage from './ProgressiveImage';
 
 const values = [
   {
@@ -31,11 +32,12 @@ export default function About() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Image with overlay badge */}
           <div className="reveal relative">
-            <img
+            <ProgressiveImage
               src="/images/work-7.jpg"
               alt="H-S Interiors Craftsmanship"
-              loading="lazy"
-              className="w-full object-cover shadow-soft aspect-[4/3] rounded-2xl border border-border"
+              aspectRatio="aspect-[4/3]"
+              containerClassName="rounded-2xl border border-border shadow-soft"
+              className="w-full h-full object-cover"
             />
             <div className="absolute -bottom-8 -right-4 rounded-2xl border border-gold/30 bg-charcoal p-8 text-white shadow-xl md:-right-8">
               <p className="font-serif text-4xl text-gold-soft font-medium">100%</p>

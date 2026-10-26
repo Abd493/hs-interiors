@@ -21,19 +21,28 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative h-screen min-h-[640px] overflow-hidden bg-charcoal">
-      {/* 4K Background Slides */}
-      {heroImages.map((src, idx) => (
-        <img
-          key={src}
-          src={src}
-          alt="Luxury interior by H-S Interiors"
-          width={3840}
-          height={2160}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ${
-            idx === currentSlide ? 'animate-kenburns opacity-100' : 'opacity-0'
-          }`}
-        />
-      ))}
+      {/* Ultra-Fast Optimized Background Slides */}
+      {heroImages.map((src, idx) => {
+        const basePath = src.replace(/\.(jpg|jpeg)$/i, '');
+        const isFirst = idx === 0;
+        return (
+          <picture key={src}>
+            <source type="image/webp" srcSet={`${basePath}.webp`} />
+            <img
+              src={src}
+              alt="Luxury interior by H-S Interiors"
+              width={1920}
+              height={1080}
+              loading={isFirst ? 'eager' : 'lazy'}
+              fetchpriority={isFirst ? 'high' : 'auto'}
+              decoding={isFirst ? 'sync' : 'async'}
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ${
+                idx === currentSlide ? 'animate-kenburns opacity-100' : 'opacity-0 pointer-events-none'
+              }`}
+            />
+          </picture>
+        );
+      })}
 
       {/* Dual High-Contrast Cinematic Scrims for 100% text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40 z-10 pointer-events-none" />

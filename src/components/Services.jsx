@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import SectionHeading from './SectionHeading';
+import ProgressiveImage from './ProgressiveImage';
 import { services } from '../data/services';
 
 const consultationUrl = "https://wa.me/923249707424?text=Hello%20H-S%20Interiors%2C%20I'd%20like%20to%20book%20a%20free%20consultation.";
@@ -27,16 +28,16 @@ export default function Services() {
                 className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]"
                 style={{ transitionDelay: `${idx * 70}ms` }}
               >
-                {/* 4K Image Header */}
+                {/* Fast Progressive Image Header */}
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
+                  <ProgressiveImage
                     src={item.img}
                     alt={item.title}
-                    loading="lazy"
+                    containerClassName="h-full w-full"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   {/* Subtle dark gradient overlay to blend image into card */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90" />
+                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90" />
 
                   {/* Floating Number Tag */}
                   <span className="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md transition-colors group-hover:border-gold group-hover:text-gold">
