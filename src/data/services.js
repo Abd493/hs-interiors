@@ -4,7 +4,8 @@ import {
   Layers,
   Frame,
   Tv,
-  Rows3
+  Rows3,
+  Sprout
 } from 'lucide-react';
 
 export const services = [
@@ -43,5 +44,11 @@ export const services = [
     img: '/images/vinyl-1.jpeg',
     title: 'Vinyl Flooring',
     text: 'Wood-look vinyl flooring that is waterproof, scratch-resistant and quick to lay — warm underfoot and easy to clean.'
+  },
+  {
+    icon: Sprout,
+    img: '/images/grass-1.jpg',
+    title: 'Artificial Grass',
+    text: 'High-density, UV-resistant luxury artificial grass for balconies, terraces, rooftop gardens and indoor green feature walls — lush, green and maintenance-free.'
   }
 ];

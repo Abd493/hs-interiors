@@ -16,7 +16,7 @@ export default function Services() {
         <SectionHeading
           eyebrow="What We Do"
           title="Ceiling to floor, all under one roof"
-          text="False ceilings, gypsum, PVC pelling, wallpapers, custom media walls and vinyl flooring — done by our own team."
+          text="False ceilings, gypsum, PVC pelling, wallpapers, custom media walls, vinyl flooring, and artificial grass — done by our own team."
         />
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -81,7 +81,7 @@ export default function Services() {
             href={consultationUrl}
             target="_blank"
             rel="noreferrer"
-            className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-r from-[#181514] via-[#24201D] to-[#181514] p-10 text-cream shadow-soft transition-all duration-500 hover:border-gold hover:shadow-[0_20px_50px_-15px_rgba(197,155,39,0.35)] md:col-span-2 lg:col-span-3"
+            className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-r from-[#181514] via-[#24201D] to-[#181514] p-10 text-cream shadow-soft transition-all duration-500 hover:border-gold hover:shadow-[0_20px_50px_-15px_rgba(197,155,39,0.35)] md:col-span-2 lg:col-span-2"
           >
             <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold/15 blur-3xl transition-transform duration-700 group-hover:scale-125" />
             

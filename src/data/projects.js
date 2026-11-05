@@ -5,7 +5,8 @@ export const categories = [
   'PVC Pelling',
   'Wallpapers',
   'Media Wall',
-  'Vinyl Flooring'
+  'Vinyl Flooring',
+  'Artificial Grass'
 ];
 
 export const projects = [
@@ -109,5 +110,15 @@ export const projects = [
     src: '/images/vinyl-1.jpeg',
     title: 'Wood-Look Vinyl Plank Flooring',
     cat: 'Vinyl Flooring',
+  },
+  {
+    src: '/images/grass-1.jpg',
+    title: 'Luxury High-Density Artificial Grass',
+    cat: 'Artificial Grass',
+  },
+  {
+    src: '/images/grass-2.jpg',
+    title: 'UV-Protected Balcony & Terrace Turf Roll',
+    cat: 'Artificial Grass',
   },
 ];
