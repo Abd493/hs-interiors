@@ -5,7 +5,9 @@ import SectionHeading from './SectionHeading';
 const phone = '+92 324 9707424';
 const phoneTel = 'tel:+923249707424';
 const whatsappUrl = 'https://wa.me/923249707424';
-const address = 'Javiad Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250';
+const address = 'Javed Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250';
+const businessMapsUrl = 'https://maps.google.com/?cid=13125711998086656642';
+const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=H-S+INTERIORS,+Javed+Sheet+Market,+Gondlanwala+Rd,+near+1+Minaar+Wali+Masjid,+Mohalla+Noor+Bawa,+Gujranwala,+52250';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -118,17 +120,27 @@ export default function Contact() {
             <div className="overflow-hidden rounded-2xl border border-border shadow-soft">
               <iframe
                 title="H-S Interiors location"
-                src="https://www.google.com/maps?q=558M%2B2P+Gujranwala&output=embed"
+                src="https://maps.google.com/maps?q=H-S+INTERIORS,+Javed+Sheet+Market,+Gondlanwala+Rd,+Gujranwala&t=&z=16&ie=UTF8&iwloc=B&output=embed"
                 className="h-72 w-full border-0 grayscale-[25%]"
                 loading="lazy"
               />
             </div>
 
             <div className="space-y-5 bg-secondary p-8 rounded-2xl border border-border shadow-soft">
-              <div className="flex gap-4">
-                <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold" />
-                <p className="font-light text-foreground">{address}, Pakistan</p>
-              </div>
+              <a
+                href={businessMapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-start gap-4 hover:text-gold transition-colors text-foreground group"
+              >
+                <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold group-hover:scale-110 transition-transform" />
+                <div className="flex-1">
+                  <p className="font-light">{address}, Pakistan</p>
+                  <span className="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-gold hover:underline">
+                    View on Google Maps →
+                  </span>
+                </div>
+              </a>
 
               <a href={phoneTel} className="flex gap-4 hover:text-gold transition-colors text-foreground">
                 <Phone className="h-5 w-5 text-gold" />
@@ -145,12 +157,23 @@ export default function Contact() {
                 <span>Chat on WhatsApp</span>
               </a>
 
-              <div className="flex items-center gap-4">
-                <span className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-whatsapp" />
-                </span>
-                <span className="font-light text-foreground">Open daily until 10:00 PM</span>
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-border/50">
+                <div className="flex items-center gap-3">
+                  <span className="relative flex h-3 w-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60" />
+                    <span className="relative inline-flex h-3 w-3 rounded-full bg-whatsapp" />
+                  </span>
+                  <span className="font-light text-foreground text-sm">Open daily until 10:00 PM</span>
+                </div>
+
+                <a
+                  href={directionsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-gold/40 bg-gold/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold hover:bg-gold hover:text-charcoal transition-all shadow-sm"
+                >
+                  Get Directions →
+                </a>
               </div>
             </div>
           </div>

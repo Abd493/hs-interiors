@@ -654,14 +654,19 @@
 
         <div class="reveal flex flex-col gap-6">
           <div class="overflow-hidden rounded-2xl border border-border shadow-soft">
-            <iframe title="H-S Interiors location" src="https://www.google.com/maps?q=558M%2B2P+Gujranwala&output=embed" class="h-72 w-full border-0 grayscale-[25%]" loading="lazy"></iframe>
+            <iframe title="H-S Interiors location" src="https://maps.google.com/maps?q=H-S+INTERIORS,+Javed+Sheet+Market,+Gondlanwala+Rd,+Gujranwala&t=&z=16&ie=UTF8&iwloc=B&output=embed" class="h-72 w-full border-0 grayscale-[25%]" loading="lazy"></iframe>
           </div>
 
           <div class="space-y-5 bg-secondary p-8 rounded-2xl border border-border shadow-soft">
-            <div class="flex gap-4">
-              <i data-lucide="map-pin" class="mt-1 h-5 w-5 shrink-0 text-gold"></i>
-              <p class="font-light text-foreground">Javiad Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250, Pakistan</p>
-            </div>
+            <a href="https://maps.google.com/?cid=13125711998086656642" target="_blank" rel="noreferrer" class="flex items-start gap-4 hover:text-gold transition-colors text-foreground group">
+              <i data-lucide="map-pin" class="mt-1 h-5 w-5 shrink-0 text-gold group-hover:scale-110 transition-transform"></i>
+              <div class="flex-1">
+                <p class="font-light">Javed Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250, Pakistan</p>
+                <span class="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-gold hover:underline">
+                  View on Google Maps →
+                </span>
+              </div>
+            </a>
             <a href="tel:+923249707424" class="flex gap-4 hover:text-gold transition-colors text-foreground">
               <i data-lucide="phone" class="h-5 w-5 text-gold"></i>
               <span>+92 324 9707424</span>
@@ -670,12 +675,17 @@
               <i data-lucide="message-circle" class="h-5 w-5 text-gold"></i>
               <span>Chat on WhatsApp</span>
             </a>
-            <div class="flex items-center gap-4">
-              <span class="relative flex h-3 w-3">
-                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60"></span>
-                <span class="relative inline-flex h-3 w-3 rounded-full bg-whatsapp"></span>
-              </span>
-              <span class="font-light text-foreground">Open daily until 10:00 PM</span>
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-border/50">
+              <div class="flex items-center gap-3">
+                <span class="relative flex h-3 w-3">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60"></span>
+                  <span class="relative inline-flex h-3 w-3 rounded-full bg-whatsapp"></span>
+                </span>
+                <span class="font-light text-foreground text-sm">Open daily until 10:00 PM</span>
+              </div>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=H-S+INTERIORS,+Javed+Sheet+Market,+Gondlanwala+Rd,+near+1+Minaar+Wali+Masjid,+Mohalla+Noor+Bawa,+Gujranwala,+52250" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 rounded-lg border border-gold/40 bg-gold/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold hover:bg-gold hover:text-charcoal transition-all shadow-sm">
+                Get Directions →
+              </a>
             </div>
           </div>
         </div>

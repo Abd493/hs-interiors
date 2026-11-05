@@ -14,7 +14,7 @@ const navLinks = [
 const phone = '+92 324 9707424';
 const phoneTel = 'tel:+923249707424';
 const whatsappUrl = 'https://wa.me/923249707424';
-const address = 'Javiad Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250';
+const address = 'Javed Sheet Market, Gondlanwala Rd, near 1 Minaar Wali Masjid, Mohalla Noor Bawa, Gujranwala, 52250';
 
 export default function Footer() {
   return (
