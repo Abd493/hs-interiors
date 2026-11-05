@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage & Main Sections -->
+  <url>
+    <loc>https://www.hsinteriors.shop/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Google Images Ranking Tags -->
+    <image:image>
+      <image:loc>https://www.hsinteriors.shop/images/hero-bg.webp</image:loc>
+      <image:title>Luxury Living Room Interior Design by H-S Interiors Gujranwala</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hsinteriors.shop/images/work-3.webp</image:loc>
+      <image:title>Modern False Ceiling and Ambient Lighting Architecture Gujranwala</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hsinteriors.shop/images/after.webp</image:loc>
+      <image:title>Luxury Living Room Renovation Before and After H-S Interiors</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.hsinteriors.shop/images/wallpaper-leaf.webp</image:loc>
+      <image:title>Bespoke Designer Wallpapers &amp; Wall Paneling Gujranwala</image:title>
+    </image:image>
+  </url>
+
+</urlset>
