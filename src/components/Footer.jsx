@@ -8,6 +8,7 @@ const navLinks = [
   ['Portfolio', '#portfolio'],
   ['About Us', '#about'],
   ['Reviews', '#reviews'],
+  ['FAQ', '#faq'],
   ['Contact', '#contact']
 ];
 

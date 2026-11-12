@@ -54,7 +54,7 @@ export default function About() {
               Crafted in Gujranwala, admired across Pakistan
             </h2>
             <p className="mt-6 font-light leading-relaxed text-muted-foreground">
-              H-S Interiors is a design and build studio rooted in Javiad Sheet Market. We combine architectural thinking with hands-on craftsmanship — from precision sheet work and custom joinery to complete turnkey renovations.
+              H-S Interiors is a premier interior design and build studio rooted in Javed Sheet Market, Gondlanwala Road. We combine architectural thinking with hands-on craftsmanship — from precision sheet work and custom joinery to complete turnkey renovations across DHA Gujranwala, DC Colony, Citi Housing, Model Town, Satellite Town, and Garden Town.
             </p>
             <p className="mt-4 font-light leading-relaxed text-muted-foreground">
               Our promise is simple: spaces that feel calm, considered and unmistakably yours.

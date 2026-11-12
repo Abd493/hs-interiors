@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Reviews from './components/Reviews';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -35,6 +36,7 @@ export default function App() {
       <Portfolio />
       <About />
       <Reviews />
+      <FAQ />
       <Contact />
       <Footer />
       <WhatsAppButton />
