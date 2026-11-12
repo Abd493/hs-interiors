@@ -18,34 +18,52 @@ const whatsappUrl = "https://wa.me/923249707424";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesReady, setSlidesReady] = useState(false);
 
   useEffect(() => {
+    // Lazy-mount extra background slides after initial Hero paint so first screen loads instantly
+    const preloadTimer = setTimeout(() => setSlidesReady(true), 1200);
     const timer = setInterval(() => {
+      setSlidesReady(true);
       setCurrentSlide(prev => (prev + 1) % heroImages.length);
     }, 6000);
-    return () => clearInterval(timer);
+    return () => {
+      clearTimeout(preloadTimer);
+      clearInterval(timer);
+    };
   }, []);
 
-  const prevSlide = () => setCurrentSlide(prev => (prev - 1 + heroImages.length) % heroImages.length);
-  const nextSlide = () => setCurrentSlide(prev => (prev + 1) % heroImages.length);
+  const prevSlide = () => {
+    setSlidesReady(true);
+    setCurrentSlide(prev => (prev - 1 + heroImages.length) % heroImages.length);
+  };
+  const nextSlide = () => {
+    setSlidesReady(true);
+    setCurrentSlide(prev => (prev + 1) % heroImages.length);
+  };
 
   return (
     <section id="home" className="bg-white pt-[72px]">
       {/* Full-Screen 4K Background Image Slider */}
       <div className="relative h-[calc(100vh-72px)] min-h-[600px] w-full overflow-hidden bg-charcoal">
         {heroImages.map((src, idx) => {
-          const basePath = src.replace(/\.(jpg|jpeg)$/i, '');
           const isFirst = idx === 0;
+          if (!isFirst && !slidesReady && idx !== currentSlide) return null;
+          const basePath = src.replace(/\.(jpg|jpeg)$/i, '');
           return (
             <picture key={src}>
-              <source type="image/webp" srcSet={`${basePath}.webp`} />
+              <source
+                type="image/webp"
+                srcSet={`${basePath}-2k.webp 1920w, ${basePath}.webp 3840w`}
+                sizes="100vw"
+              />
               <img
                 src={src}
                 alt="Luxury interior by H-S Interiors Gujranwala"
                 width={3840}
                 height={2160}
                 loading={isFirst ? 'eager' : 'lazy'}
-                fetchpriority={isFirst ? 'high' : 'auto'}
+                fetchpriority={isFirst ? 'high' : 'low'}
                 decoding={isFirst ? 'sync' : 'async'}
                 className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ${
                   idx === currentSlide ? 'animate-kenburns opacity-100' : 'opacity-0 pointer-events-none'

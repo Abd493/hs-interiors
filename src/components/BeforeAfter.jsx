@@ -37,13 +37,18 @@ export default function BeforeAfter() {
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
     >
-      {/* After image: Fast WebP Finished Luxury Interior */}
+      {/* After image: Responsive Fast + 4K WebP */}
       <picture>
-        <source type="image/webp" srcSet="/images/after.webp" />
+        <source
+          type="image/webp"
+          srcSet="/images/after_card.webp 1280w, /images/after.webp 3840w"
+          sizes="(max-width: 1024px) 95vw, 66vw"
+        />
         <img
           src="/images/after.jpg"
           alt="After luxury renovation by H-S Interiors"
           loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
           draggable={false}
         />
@@ -51,11 +56,16 @@ export default function BeforeAfter() {
 
       {/* Before image: Exact same room in raw bare-shell concrete */}
       <picture>
-        <source type="image/webp" srcSet="/images/before.webp" />
+        <source
+          type="image/webp"
+          srcSet="/images/before_card.webp 1280w, /images/before.webp 3840w"
+          sizes="(max-width: 1024px) 95vw, 66vw"
+        />
         <img
           src="/images/before.jpg"
           alt="Before renovation empty bare shell"
           loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           draggable={false}

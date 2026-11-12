@@ -181,6 +181,8 @@ export default function Portfolio() {
               <img
                 src={filteredProjects[activeModalIdx].src}
                 alt={filteredProjects[activeModalIdx].title}
+                loading="lazy"
+                decoding="async"
                 className="max-h-[80vh] w-auto object-contain rounded-2xl shadow-2xl mx-auto border border-white/10"
               />
             </picture>
