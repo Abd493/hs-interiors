@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import { Logo } from './Navbar';
 
 const navLinks = [
@@ -13,8 +13,11 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: Facebook, label: 'Facebook', href: '#' }
+  {
+    icon: Instagram,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/hs_interiors_solution/'
+  }
 ];
 
 const phone = '+92 324 9707424';
@@ -37,6 +40,8 @@ export default function Footer() {
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noreferrer"
                 aria-label={label}
                 className="grid h-10 w-10 place-items-center rounded-full bg-white border border-border text-charcoal shadow-xs transition-all hover:border-charcoal hover:bg-charcoal hover:text-white"
               >
