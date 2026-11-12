@@ -75,30 +75,24 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Projects Gallery - Step-wise Progressive Masonry */}
+        {/* Projects Gallery - Crisp Clean Responsive Grid */}
         <div
-          className={`gap-6 transition-all duration-500 ${
-            isSingle ? 'columns-1' : 'columns-1 sm:columns-2 lg:columns-3'
+          className={`grid gap-6 transition-all duration-500 ${
+            isSingle ? 'grid-cols-1 max-w-3xl mx-auto' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
           }`}
         >
           {displayedProjects.map((project, idx) => (
             <button
               key={project.title}
               onClick={() => setActiveModalIdx(idx)}
-              className="group relative mb-6 block w-full overflow-hidden break-inside-avoid rounded-2xl shadow-soft text-left border border-border hover:border-gold/70 hover:shadow-lg transition-all duration-300 bg-white"
+              className="group relative block w-full overflow-hidden rounded-2xl shadow-soft text-left border border-border hover:border-gold/70 hover:shadow-lg transition-all duration-300 bg-white"
             >
               <ProgressiveImage
                 src={project.src}
                 alt={project.title}
-                aspectRatio={
-                  project.tall
-                    ? 'aspect-[4/5]'
-                    : isSingle
-                    ? 'aspect-[16/9]'
-                    : 'aspect-[4/3]'
-                }
+                aspectRatio={isSingle ? 'aspect-[16/9]' : 'aspect-[4/3]'}
                 containerClassName="w-full"
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/25 to-transparent p-6 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
                 <span className="eyebrow text-[#E5C365]">{project.cat}</span>
