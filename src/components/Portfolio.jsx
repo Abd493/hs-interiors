@@ -54,20 +54,20 @@ export default function Portfolio() {
   }, [activeModalIdx, filteredProjects.length]);
 
   return (
-    <section id="portfolio" className="bg-secondary px-6 py-28 border-y border-border/40">
+    <section id="portfolio" className="bg-secondary px-6 py-24 border-y border-border">
       <div className="mx-auto max-w-7xl">
         <SectionHeading eyebrow="Portfolio" title="Selected projects" />
 
         {/* Filter categories */}
-        <div className="reveal mb-12 flex flex-wrap justify-center gap-2">
+        <div className="reveal mb-12 flex flex-wrap justify-center gap-2.5">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => handleCategoryChange(cat)}
-              className={`px-5 py-2.5 text-xs uppercase tracking-[0.18em] transition-all rounded-full font-medium ${
+              className={`px-5 py-2.5 text-xs uppercase tracking-[0.16em] transition-all rounded-full font-semibold ${
                 selectedCategory === cat
-                  ? 'bg-gold text-[#12100F] font-semibold shadow-md'
-                  : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-gold shadow-sm'
+                  ? 'bg-charcoal text-white shadow-sm'
+                  : 'bg-white border border-border text-muted-foreground hover:text-charcoal hover:border-charcoal/40 shadow-xs'
               }`}
             >
               {cat}
@@ -85,7 +85,7 @@ export default function Portfolio() {
             <button
               key={project.title}
               onClick={() => setActiveModalIdx(idx)}
-              className="group relative mb-6 block w-full overflow-hidden break-inside-avoid rounded-2xl shadow-soft text-left border border-border/60 hover:border-gold hover:shadow-[0_15px_35px_-8px_rgba(197,155,39,0.25)] transition-all duration-500 bg-[#161413]"
+              className="group relative mb-6 block w-full overflow-hidden break-inside-avoid rounded-2xl shadow-soft text-left border border-border hover:border-gold/70 hover:shadow-lg transition-all duration-300 bg-white"
             >
               <ProgressiveImage
                 src={project.src}
@@ -100,8 +100,8 @@ export default function Portfolio() {
                 containerClassName="w-full"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
-              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent p-6 text-left opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none">
-                <span className="eyebrow text-gold-soft">{project.cat}</span>
+              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/25 to-transparent p-6 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
+                <span className="eyebrow text-[#E5C365]">{project.cat}</span>
                 <span className="mt-1 font-serif text-2xl text-white">
                   {project.title}
                 </span>
@@ -115,12 +115,12 @@ export default function Portfolio() {
           <div className="mt-12 text-center">
             <button
               onClick={handleLoadMore}
-              className="group inline-flex items-center gap-3 rounded-full border border-gold/40 bg-card px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream transition-all duration-300 hover:border-gold hover:bg-gold hover:text-[#12100F] hover:shadow-[0_0_30px_rgba(197,155,39,0.4)]"
+              className="group inline-flex items-center gap-3 rounded-full border border-border bg-white px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-charcoal shadow-sm transition-all duration-300 hover:border-charcoal hover:bg-charcoal hover:text-white"
             >
-              <Plus className="h-4 w-4 text-gold group-hover:text-[#12100F] transition-colors" />
+              <Plus className="h-4 w-4 text-gold group-hover:text-white transition-colors" />
               <span>Explore More Projects ({remainingCount} Remaining)</span>
             </button>
-            <p className="mt-3 text-[0.7rem] uppercase tracking-widest text-muted-foreground/80">
+            <p className="mt-3 text-[0.7rem] uppercase tracking-widest text-muted-foreground">
               Showing {displayedProjects.length} of {filteredProjects.length} Signature Projects
             </p>
           </div>
@@ -130,10 +130,10 @@ export default function Portfolio() {
         <div className="mt-24 grid items-center gap-12 lg:grid-cols-[1fr_2fr]">
           <div className="reveal">
             <p className="eyebrow mb-4">Before / After</p>
-            <h3 className="font-serif text-4xl text-cream">
+            <h3 className="font-serif text-4xl font-semibold text-foreground">
               From bare shell to signature home
             </h3>
-            <p className="mt-5 font-light leading-relaxed text-muted-foreground">
+            <p className="mt-5 leading-relaxed text-muted-foreground">
               Drag the handle to compare an empty space with a finished, styled living area.
             </p>
           </div>

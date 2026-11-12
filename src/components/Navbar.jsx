@@ -13,19 +13,19 @@ const navLinks = [
 
 const consultationUrl = "https://wa.me/923249707424?text=Hello%20H-S%20Interiors%2C%20I'd%20like%20to%20book%20a%20free%20consultation.";
 
-export function Logo({ light }) {
+export function Logo({ light = false }) {
   return (
-    <a href="#home" className="flex items-center gap-3.5 group">
-      <div className="relative grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-gold/40 bg-gradient-to-br from-[#221E1B] via-[#161413] to-[#0D0B0A] shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:border-gold">
-        <span className="font-serif text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-[#FBF2D5] via-[#E5C365] to-[#C59B27]">
+    <a href="#home" className="flex items-center gap-3 group">
+      <div className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-charcoal shadow-sm transition-transform duration-300 group-hover:scale-105">
+        <span className="font-serif text-lg font-bold tracking-tight text-[#E5C365]">
           HS
         </span>
       </div>
       <div className="leading-tight">
-        <span className={`block font-serif text-2xl font-semibold tracking-[0.12em] transition-colors ${light ? 'text-cream' : 'text-foreground'}`}>
+        <span className={`block font-serif text-xl sm:text-2xl font-semibold tracking-[0.1em] transition-colors ${light ? 'text-white' : 'text-foreground'}`}>
           H-S <span className="text-gold">INTERIORS</span>
         </span>
-        <span className={`mt-0.5 block text-[0.6rem] uppercase tracking-[0.3em] ${light ? 'text-cream/70' : 'text-muted-foreground'}`}>
+        <span className={`block text-[0.58rem] uppercase tracking-[0.26em] ${light ? 'text-white/70' : 'text-muted-foreground'}`}>
           Interior Architecture &amp; Design
         </span>
       </div>
@@ -38,34 +38,30 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isTransparent = !scrolled && !mobileOpen;
-
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
-        isTransparent
-          ? 'bg-transparent py-6'
-          : 'bg-background/95 py-3 shadow-soft backdrop-blur'
+      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 border-b border-border/80 ${
+        scrolled
+          ? 'bg-white/95 py-3 shadow-sm backdrop-blur-md'
+          : 'bg-white/98 py-4 backdrop-blur-sm'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-        <Logo light={isTransparent} />
+        <Logo light={false} />
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {navLinks.map(([label, href]) => (
             <a
               key={href}
               href={href}
-              className={`text-sm tracking-wide transition-colors hover:text-gold ${
-                isTransparent ? 'text-cream' : 'text-foreground'
-              }`}
+              className="text-sm font-medium tracking-wide text-foreground/80 transition-colors hover:text-gold"
             >
               {label}
             </a>
@@ -74,15 +70,15 @@ export default function Navbar() {
             href={consultationUrl}
             target="_blank"
             rel="noreferrer"
-            className="bg-gold px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground transition-colors hover:bg-gold-soft"
+            className="rounded-full bg-charcoal px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition-all hover:bg-gold shadow-sm"
           >
-            Book Free Consultation
+            Book Consultation
           </a>
         </nav>
 
         {/* Mobile menu trigger */}
         <button
-          className={`lg:hidden ${isTransparent ? 'text-cream' : 'text-foreground'}`}
+          className="lg:hidden text-foreground p-1.5 rounded-lg hover:bg-muted transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
@@ -92,13 +88,13 @@ export default function Navbar() {
 
       {/* Mobile Nav dropdown */}
       {mobileOpen && (
-        <nav className="flex flex-col gap-4 border-t border-border bg-background/98 px-6 py-6 backdrop-blur lg:hidden">
+        <nav className="flex flex-col gap-3 border-t border-border bg-white px-6 py-6 shadow-lg lg:hidden">
           {navLinks.map(([label, href]) => (
             <a
               key={href}
               href={href}
               onClick={() => setMobileOpen(false)}
-              className="font-serif text-xl text-foreground hover:text-gold"
+              className="font-serif text-xl text-foreground hover:text-gold py-1"
             >
               {label}
             </a>
@@ -107,7 +103,7 @@ export default function Navbar() {
             href={consultationUrl}
             target="_blank"
             rel="noreferrer"
-            className="mt-2 bg-gold px-5 py-3 text-center text-xs font-medium uppercase tracking-[0.18em] text-accent-foreground"
+            className="mt-2 rounded-full bg-charcoal px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white hover:bg-gold transition-colors"
           >
             Book Free Consultation
           </a>

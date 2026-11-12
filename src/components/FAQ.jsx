@@ -9,7 +9,7 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState(0);
 
   return (
-    <section id="faq" className="px-6 py-28 bg-secondary/40 border-t border-border/50">
+    <section id="faq" className="px-6 py-24 bg-background">
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Answers & Guide"
@@ -17,16 +17,16 @@ export default function FAQ() {
           text="Everything you need to know about hiring an interior designer in Gujranwala, material options, timelines, and free on-site estimates."
         />
 
-        <div className="space-y-4">
+        <div className="reveal space-y-4">
           {faqs.map((item, idx) => {
             const isOpen = openIdx === idx;
             return (
               <div
                 key={item.q}
-                className={`reveal rounded-2xl border transition-all duration-300 ${
+                className={`rounded-2xl border transition-all duration-300 ${
                   isOpen
-                    ? 'border-gold/50 bg-card shadow-[0_10px_30px_-10px_rgba(197,155,39,0.2)]'
-                    : 'border-border bg-card/60 hover:border-gold/30'
+                    ? 'border-gold/60 bg-white shadow-soft'
+                    : 'border-border bg-[#FAFAF8] hover:border-gold/40 hover:bg-white'
                 }`}
               >
                 <button
@@ -35,7 +35,7 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                 >
-                  <h3 className="font-serif text-xl md:text-2xl font-medium text-foreground">
+                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground">
                     {item.q}
                   </h3>
                   <ChevronDown
@@ -52,7 +52,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-sm md:text-base font-light leading-relaxed text-muted-foreground border-t border-border/40 pt-4">
+                    <p className="px-6 pb-6 text-sm md:text-base leading-relaxed text-muted-foreground border-t border-border/60 pt-4">
                       {item.a}
                     </p>
                   </div>
@@ -67,9 +67,9 @@ export default function FAQ() {
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-3 rounded-xl border border-gold/40 bg-gold/10 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold transition-all hover:bg-gold hover:text-[#12100F]"
+            className="inline-flex items-center gap-3 rounded-full bg-charcoal px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-sm transition-all hover:bg-gold"
           >
-            <MessageCircle className="h-4 w-4" /> Ask Our Lead Designer on WhatsApp
+            <MessageCircle className="h-4 w-4 text-[#E5C365]" /> Ask Our Lead Designer on WhatsApp
           </a>
         </div>
       </div>

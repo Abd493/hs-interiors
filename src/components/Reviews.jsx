@@ -15,7 +15,7 @@ export default function Reviews() {
   const current = reviews[currentIdx];
 
   return (
-    <section id="reviews" className="bg-charcoal px-6 py-28 text-cream">
+    <section id="reviews" className="bg-[#F7F6F2] border-y border-border px-6 py-24 text-foreground">
       <div className="mx-auto max-w-4xl text-center">
         <p className="eyebrow mb-4">Client Reviews</p>
 
@@ -29,13 +29,13 @@ export default function Reviews() {
         {/* Testimonial Quote */}
         <blockquote
           key={currentIdx}
-          className="font-serif text-3xl italic leading-snug md:text-4xl transition-opacity duration-700"
+          className="font-serif text-3xl italic leading-snug text-charcoal md:text-4xl transition-opacity duration-700"
         >
           “{current.text}”
         </blockquote>
 
-        <p className="mt-8 text-sm uppercase tracking-[0.2em]">{current.name}</p>
-        <p className="mt-1 text-sm font-light text-cream/60">{current.place}</p>
+        <p className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">{current.name}</p>
+        <p className="mt-1 text-sm text-muted-foreground">{current.place}</p>
 
         {/* Navigation Arrows & Progress Bars */}
         <div className="mt-10 flex items-center justify-center gap-6">
@@ -44,7 +44,7 @@ export default function Reviews() {
               setCurrentIdx((prev) => (prev - 1 + reviews.length) % reviews.length)
             }
             aria-label="Previous review"
-            className="grid h-11 w-11 place-items-center rounded-full border border-cream/30 transition-colors hover:border-gold hover:text-gold"
+            className="grid h-11 w-11 place-items-center rounded-full bg-white border border-border text-charcoal shadow-xs transition-all hover:border-charcoal hover:bg-charcoal hover:text-white"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -53,8 +53,8 @@ export default function Reviews() {
             {reviews.map((_, idx) => (
               <span
                 key={idx}
-                className={`h-[2px] transition-all duration-300 ${
-                  idx === currentIdx ? 'w-8 bg-gold' : 'w-4 bg-cream/30'
+                className={`h-[3px] rounded-full transition-all duration-300 ${
+                  idx === currentIdx ? 'w-8 bg-charcoal' : 'w-4 bg-charcoal/20'
                 }`}
               />
             ))}
@@ -63,7 +63,7 @@ export default function Reviews() {
           <button
             onClick={() => setCurrentIdx((prev) => (prev + 1) % reviews.length)}
             aria-label="Next review"
-            className="grid h-11 w-11 place-items-center rounded-full border border-cream/30 transition-colors hover:border-gold hover:text-gold"
+            className="grid h-11 w-11 place-items-center rounded-full bg-white border border-border text-charcoal shadow-xs transition-all hover:border-charcoal hover:bg-charcoal hover:text-white"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

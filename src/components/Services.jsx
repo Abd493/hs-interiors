@@ -8,10 +8,7 @@ const consultationUrl = "https://wa.me/923249707424?text=Hello%20H-S%20Interiors
 
 export default function Services() {
   return (
-    <section id="services" className="relative px-6 py-28 overflow-hidden bg-background">
-      {/* Background ambient gold lighting */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gold/5 blur-[120px]" />
-
+    <section id="services" className="relative px-6 py-24 overflow-hidden bg-background">
       <div className="relative mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="What We Do"
@@ -25,53 +22,49 @@ export default function Services() {
             return (
               <div
                 key={item.title}
-                className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-[#221F1D] to-[#161413] shadow-soft transition-all duration-500 hover:-translate-y-2 hover:border-gold hover:shadow-[0_20px_45px_-10px_rgba(197,155,39,0.3)]"
-                style={{ transitionDelay: `${idx * 70}ms` }}
+                className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-lg"
+                style={{ transitionDelay: `${idx * 60}ms` }}
               >
-                {/* Fast Progressive Image Header */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                {/* Clean Gallery Image Header */}
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#F1F0EC]">
                   <ProgressiveImage
                     src={item.img}
                     alt={item.title}
                     containerClassName="h-full w-full"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
-                  {/* Subtle dark gradient overlay to blend image into card */}
-                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#221F1D] via-transparent to-black/30 opacity-90" />
 
                   {/* Floating Number Tag */}
-                  <span className="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-full border border-cream/20 bg-black/70 font-serif text-xs font-semibold text-cream backdrop-blur-md transition-colors group-hover:border-gold group-hover:text-gold">
+                  <span className="absolute top-3.5 right-3.5 grid h-8 w-8 place-items-center rounded-full border border-black/10 bg-white/95 font-serif text-xs font-semibold text-charcoal shadow-sm backdrop-blur-sm transition-colors group-hover:border-gold group-hover:text-gold">
                     0{idx + 1}
                   </span>
 
                   {/* Verified Craft Tag */}
-                  <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-black/75 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-gold-soft backdrop-blur-md">
+                  <span className="absolute top-3.5 left-3.5 inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-white/95 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-widest text-charcoal shadow-sm backdrop-blur-sm">
                     <Sparkles className="h-3 w-3 text-gold" /> In-House Team
                   </span>
                 </div>
 
-                {/* Content: Logo ke samne Name, aur description neechy (NO redundant footer) */}
-                <div className="p-7">
-                  {/* Header: Icon (Logo) and Name horizontally aligned */}
+                {/* Clean Card Body */}
+                <div className="p-7 bg-white">
                   <div className="flex items-center gap-4">
-                    <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-gold/35 bg-gold/10 text-gold shadow-sm transition-all duration-500 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold group-hover:text-charcoal group-hover:shadow-[0_0_20px_rgba(197,155,39,0.5)]">
+                    <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-[#E8D9A8] bg-[#FAF6EA] text-gold transition-all duration-300 group-hover:scale-105 group-hover:border-gold group-hover:bg-charcoal group-hover:text-[#E5C365]">
                       <Icon className="h-6 w-6" strokeWidth={1.5} />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-serif text-2xl font-semibold tracking-tight text-cream transition-colors group-hover:text-gold">
+                      <h3 className="font-serif text-2xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-gold">
                         {item.title}
                       </h3>
                     </div>
                   </div>
 
-                  {/* Description below */}
-                  <p className="mt-4 font-light text-sm leading-relaxed text-cream/75">
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                     {item.text}
                   </p>
                 </div>
 
-                {/* Animated Gold Line at bottom */}
-                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full" />
+                {/* Subtle Bottom Accent Line */}
+                <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gold transition-all duration-500 group-hover:w-full" />
               </div>
             );
           })}
@@ -81,32 +74,30 @@ export default function Services() {
             href={consultationUrl}
             target="_blank"
             rel="noreferrer"
-            className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-r from-[#181514] via-[#24201D] to-[#181514] p-10 text-cream shadow-soft transition-all duration-500 hover:border-gold hover:shadow-[0_20px_50px_-15px_rgba(197,155,39,0.35)] md:col-span-2 lg:col-span-2"
+            className="reveal group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[#E5E3DB] bg-gradient-to-br from-[#F8F7F3] to-[#F1EFE7] p-10 text-foreground shadow-soft transition-all duration-300 hover:border-gold/70 hover:shadow-lg md:col-span-2 lg:col-span-2"
           >
-            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold/15 blur-3xl transition-transform duration-700 group-hover:scale-125" />
-            
             <div className="relative">
-              <p className="eyebrow flex items-center gap-2 text-gold-soft">
-                <Sparkles className="h-3.5 w-3.5 text-gold-soft" /> Free Consultation
+              <p className="eyebrow flex items-center gap-2 text-gold">
+                <Sparkles className="h-3.5 w-3.5 text-gold" /> Free Consultation
               </p>
-              <h3 className="mt-4 font-serif text-3xl md:text-4xl text-cream">
-                Not sure where to start? Let's talk with our lead designer.
+              <h3 className="mt-4 font-serif text-3xl md:text-4xl font-semibold text-foreground">
+                Not sure where to start? Let&apos;s talk with our lead designer.
               </h3>
-              <p className="mt-3 max-w-2xl font-light text-cream/75 leading-relaxed">
+              <p className="mt-3 max-w-2xl text-muted-foreground leading-relaxed">
                 Get itemised estimates, material samples, and 3D layout options for your home or commercial project in Gujranwala.
               </p>
             </div>
 
-            <div className="relative mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-cream/10 pt-6">
-              <span className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-gold font-medium transition-transform group-hover:translate-x-2">
-                Book now on WhatsApp <ArrowRight className="h-4 w-4" />
+            <div className="relative mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
+              <span className="inline-flex items-center gap-2 rounded-full bg-charcoal px-6 py-3 text-xs uppercase tracking-[0.16em] text-white font-semibold transition-all group-hover:bg-gold">
+                Book now on WhatsApp <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
-              <span className="text-xs uppercase tracking-widest text-cream/50">
+              <span className="text-xs uppercase tracking-widest text-muted-foreground font-medium">
                 Response within 30 minutes
               </span>
             </div>
 
-            <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-gold via-gold-soft to-gold transition-all duration-500 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gold transition-all duration-500 group-hover:w-full" />
           </a>
         </div>
       </div>

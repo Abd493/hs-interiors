@@ -51,8 +51,8 @@ export default {
       },
       keyframes: {
         kenburns: {
-          '0%': { transform: 'scale(1.05)' },
-          '100%': { transform: 'scale(1.15)' },
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.04)' },
         },
       },
       animation: {

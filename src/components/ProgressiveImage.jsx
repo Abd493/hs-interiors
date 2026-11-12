@@ -22,12 +22,12 @@ export default function ProgressiveImage({
   return (
     <div
       onClick={onClick}
-      className={`relative overflow-hidden bg-[#181513] ${aspectRatio} ${containerClassName}`}
+      className={`relative overflow-hidden bg-[#F1F0EC] ${aspectRatio} ${containerClassName}`}
       style={style}
     >
       {/* 1. Shimmer Skeleton Placeholder while loading */}
       {!isLoaded && (
-        <div className="absolute inset-0 z-10 flex items-center justify-center bg-[#181513]">
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-[#F1F0EC]">
           {/* Subtle blurred mini-thumbnail if loaded */}
           <img
             src={thumbSrc}

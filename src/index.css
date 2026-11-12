@@ -3,40 +3,40 @@
 @tailwind utilities;
 
 :root {
-  --radius: 0.5rem;
-  /* Ultra-Luxury Dark Palette */
-  --background: #12100F;
-  --foreground: #F5F2EB;
-  --card: #1C1917;
-  --card-foreground: #F5F2EB;
-  --popover: #1C1917;
-  --popover-foreground: #F5F2EB;
-  --primary: #C59B27;
-  --primary-foreground: #12100F;
-  --secondary: #181514;
-  --secondary-foreground: #F5F2EB;
-  --muted: #262320;
-  --muted-foreground: #ABA396;
-  --accent: #C59B27;
-  --accent-foreground: #12100F;
-  --gold: #C59B27;
-  --gold-soft: #E5C98A;
-  --charcoal: #0E0D0C;
-  --cream: #F5F2EB;
+  --radius: 0.75rem;
+  /* Crisp Clean Light Gallery Luxury Palette */
+  --background: #FFFFFF;
+  --foreground: #141413;
+  --card: #FFFFFF;
+  --card-foreground: #141413;
+  --popover: #FFFFFF;
+  --popover-foreground: #141413;
+  --primary: #B0871D;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F7F7F5;
+  --secondary-foreground: #141413;
+  --muted: #F1F0EB;
+  --muted-foreground: #5C5B55;
+  --accent: #141413;
+  --accent-foreground: #FFFFFF;
+  --gold: #B0871D;
+  --gold-soft: #C59B27;
+  --charcoal: #141413;
+  --cream: #FAF9F6;
   --whatsapp: #25D366;
   --destructive: #B91C1C;
   --destructive-foreground: #FFFFFF;
-  --border: #2E2A27;
-  --input: #3D3833;
-  --ring: #C59B27;
-  --shadow-soft: 0 15px 45px -10px rgba(0, 0, 0, 0.8), 0 0 35px -15px rgba(197, 155, 39, 0.35);
-  --gradient-hero: linear-gradient(90deg, rgba(14, 12, 11, 0.92) 0%, rgba(14, 12, 11, 0.72) 55%, rgba(14, 12, 11, 0.45) 100%);
+  --border: #E7E6E1;
+  --input: #D8D6CF;
+  --ring: #B0871D;
+  --shadow-soft: 0 12px 32px -12px rgba(20, 20, 19, 0.08);
+  --gradient-hero: linear-gradient(90deg, rgba(244, 244, 241, 0.96) 0%, rgba(244, 244, 241, 0.75) 55%, rgba(244, 244, 241, 0.25) 100%);
 }
 
 html {
   scroll-behavior: smooth;
   font-family: 'Jost', sans-serif;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -66,10 +66,10 @@ body {
 
 @keyframes kenburns {
   0% {
-    transform: scale(1.05);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.15);
+    transform: scale(1.04);
   }
 }
 
@@ -92,7 +92,7 @@ body {
 
 ::selection {
   background-color: var(--gold);
-  color: #12100F;
+  color: #FFFFFF;
 }
 
 /* Custom subtle scrollbar */
@@ -100,10 +100,10 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--charcoal);
+  background: #F5F5F2;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--muted);
+  background: #D4D2CB;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {

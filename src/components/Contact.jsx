@@ -22,21 +22,21 @@ export default function Contact() {
   };
 
   const inputClass =
-    'w-full border-b border-border bg-transparent py-3.5 font-light outline-none transition-colors focus:border-gold text-foreground placeholder:text-muted-foreground/60 [&>option]:bg-[#1C1917] [&>option]:text-cream';
+    'w-full border-b border-border bg-transparent py-3.5 text-sm outline-none transition-colors focus:border-charcoal text-foreground placeholder:text-muted-foreground/70 [&>option]:bg-white [&>option]:text-[#141413]';
 
   return (
-    <section id="contact" className="px-6 py-28 bg-background">
+    <section id="contact" className="px-6 py-24 bg-secondary border-t border-border">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Contact & Visit"
           title="Let's design your space"
         />
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2">
           {/* Form */}
           <form
             onSubmit={handleSubmit}
-            className="reveal space-y-6 bg-card p-8 md:p-12 rounded-2xl border border-border shadow-soft"
+            className="reveal space-y-6 bg-white p-8 md:p-12 rounded-2xl border border-border shadow-soft"
           >
             <div className="grid gap-6 sm:grid-cols-2">
               <input
@@ -72,13 +72,14 @@ export default function Contact() {
                 <option value="Wallpapers">Wallpapers</option>
                 <option value="Customized Media Wall">Customized Media Wall</option>
                 <option value="Vinyl Flooring">Vinyl Flooring</option>
+                <option value="Artificial Grass">Artificial Grass</option>
               </select>
 
               <input
                 name="area"
                 required
                 maxLength={80}
-                placeholder="Your area / city (e.g. Satellite Town)"
+                placeholder="Your area / city (e.g. DHA Gujranwala)"
                 className={inputClass}
               />
             </div>
@@ -103,7 +104,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center gap-3 bg-gold px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#12100F] transition-all hover:bg-gold-soft hover:shadow-[0_0_25px_rgba(197,155,39,0.4)] rounded-xl"
+              className="inline-flex w-full items-center justify-center gap-3 bg-charcoal px-8 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white transition-all hover:bg-gold shadow-sm rounded-full"
             >
               Send Enquiry <ArrowRight className="h-4 w-4" />
             </button>
@@ -117,16 +118,16 @@ export default function Contact() {
 
           {/* Location Map & Details */}
           <div className="reveal flex flex-col gap-6">
-            <div className="overflow-hidden rounded-2xl border border-border shadow-soft">
+            <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
               <iframe
                 title="H-S Interiors location"
                 src="https://maps.google.com/maps?q=H-S+INTERIORS,+Javed+Sheet+Market,+Gondlanwala+Rd,+Gujranwala&t=&z=16&ie=UTF8&iwloc=B&output=embed"
-                className="h-72 w-full border-0 grayscale-[25%]"
+                className="h-72 w-full border-0"
                 loading="lazy"
               />
             </div>
 
-            <div className="space-y-5 bg-secondary p-8 rounded-2xl border border-border shadow-soft">
+            <div className="space-y-5 bg-white p-8 rounded-2xl border border-border shadow-soft">
               <a
                 href={businessMapsUrl}
                 target="_blank"
@@ -135,8 +136,8 @@ export default function Contact() {
               >
                 <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold group-hover:scale-110 transition-transform" />
                 <div className="flex-1">
-                  <p className="font-light">{address}, Pakistan</p>
-                  <span className="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-gold hover:underline">
+                  <p className="text-sm sm:text-base">{address}, Pakistan</p>
+                  <span className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:underline">
                     View on Google Maps →
                   </span>
                 </div>
@@ -157,20 +158,20 @@ export default function Contact() {
                 <span>Chat on WhatsApp</span>
               </a>
 
-              <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-border/50">
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-border">
                 <div className="flex items-center gap-3">
                   <span className="relative flex h-3 w-3">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-whatsapp opacity-60" />
                     <span className="relative inline-flex h-3 w-3 rounded-full bg-whatsapp" />
                   </span>
-                  <span className="font-light text-foreground text-sm">Open daily until 10:00 PM</span>
+                  <span className="text-foreground text-sm font-medium">Open daily until 10:00 PM</span>
                 </div>
 
                 <a
                   href={directionsUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-gold/40 bg-gold/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold hover:bg-gold hover:text-charcoal transition-all shadow-sm"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-wider text-charcoal hover:bg-charcoal hover:text-white transition-all shadow-xs"
                 >
                   Get Directions →
                 </a>
