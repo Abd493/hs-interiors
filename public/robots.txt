@@ -33,3 +33,4 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://www.hsinteriors.shop/sitemap.xml
+Agentmap: https://www.hsinteriors.shop/.well-known/ard.json

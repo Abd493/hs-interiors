@@ -16,7 +16,7 @@ const consultationUrl = "https://wa.me/923249707424?text=Hello%20H-S%20Interiors
 export function Logo({ light = false }) {
   return (
     <a href="#home" className="flex items-center gap-3 group">
-      <div className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-charcoal shadow-sm transition-transform duration-300 group-hover:scale-105">
+      <div className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#141413] border-[1.5px] border-[#C59B27] shadow-xs transition-transform duration-300 group-hover:scale-105">
         <span className="font-serif text-lg font-bold tracking-tight text-[#E5C365]">
           HS
         </span>
@@ -46,13 +46,13 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 border-b border-border/80 ${
+      className={`fixed inset-x-0 top-0 z-40 h-[72px] flex items-center transition-colors duration-300 border-b border-border/80 ${
         scrolled
-          ? 'bg-white/95 py-3 shadow-sm backdrop-blur-md'
-          : 'bg-white/98 py-4 backdrop-blur-sm'
+          ? 'bg-white/95 shadow-sm backdrop-blur-md'
+          : 'bg-white/98 backdrop-blur-sm'
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
+      <div className="w-full mx-auto flex max-w-7xl items-center justify-between px-6">
         <Logo light={false} />
 
         {/* Desktop Nav */}

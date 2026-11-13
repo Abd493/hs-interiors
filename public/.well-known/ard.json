@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:hsinteriors.shop:catalog:design",
+      "displayName": "H-S Interiors Architecture & Design Catalog",
+      "type": "application/ai-catalog+json",
+      "url": "https://www.hsinteriors.shop/llms.txt",
+      "capabilities": [
+        "InteriorDesign",
+        "ArchitectureConsultation",
+        "MediaWallDesign",
+        "PVCWallPanels",
+        "FalseCeilings",
+        "FlooringAndGrass"
+      ],
+      "description": "Official catalog of luxury interior architecture, turnkey renovations, bespoke media walls, PVC panelling, false ceilings, UV sheets, and turf grass services in Gujranwala and Punjab, Pakistan.",
+      "representativeQueries": [
+        "best interior designer in Gujranwala",
+        "custom media wall price Gujranwala",
+        "PVC wall panels supplier Pakistan",
+        "book interior architecture consultation"
+      ]
+    }
+  ]
+}
