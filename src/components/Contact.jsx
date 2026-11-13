@@ -39,71 +39,104 @@ export default function Contact() {
             className="reveal space-y-6 bg-white p-8 md:p-12 rounded-2xl border border-border shadow-soft"
           >
             <div className="grid gap-6 sm:grid-cols-2">
-              <input
-                name="name"
-                required
-                maxLength={80}
-                placeholder="Full name"
-                className={inputClass}
-              />
-              <input
-                name="phone"
-                required
-                type="tel"
-                maxLength={20}
-                placeholder="Phone number"
-                className={inputClass}
-              />
+              <div>
+                <label htmlFor="contact-name" className="sr-only">Full name</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  required
+                  maxLength={80}
+                  placeholder="Full name"
+                  aria-label="Full name"
+                  autoComplete="name"
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-phone" className="sr-only">Phone number</label>
+                <input
+                  id="contact-phone"
+                  name="phone"
+                  required
+                  type="tel"
+                  maxLength={20}
+                  placeholder="Phone number"
+                  aria-label="Phone number"
+                  autoComplete="tel"
+                  className={inputClass}
+                />
+              </div>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="contact-service" className="sr-only">Service needed</label>
+                <select
+                  id="contact-service"
+                  name="type"
+                  required
+                  defaultValue=""
+                  aria-label="Service needed"
+                  className={inputClass}
+                >
+                  <option value="" disabled>
+                    Service needed
+                  </option>
+                  <option value="False Ceiling">False Ceiling</option>
+                  <option value="Gypsum Work">Gypsum Work</option>
+                  <option value="PVC Pelling">PVC Pelling</option>
+                  <option value="Wallpapers">Wallpapers</option>
+                  <option value="Customized Media Wall">Customized Media Wall</option>
+                  <option value="Vinyl Flooring">Vinyl Flooring</option>
+                  <option value="Artificial Grass">Artificial Grass</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="contact-area" className="sr-only">Your area or city</label>
+                <input
+                  id="contact-area"
+                  name="area"
+                  required
+                  maxLength={80}
+                  placeholder="Your area / city (e.g. DHA Gujranwala)"
+                  aria-label="Your area or city in Gujranwala or Punjab"
+                  className={inputClass}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="contact-time" className="sr-only">Preferred consultation time</label>
               <select
-                name="type"
-                required
-                defaultValue=""
+                id="contact-time"
+                name="time"
+                defaultValue="Morning (10am – 1pm)"
+                aria-label="Preferred consultation time"
                 className={inputClass}
               >
-                <option value="" disabled>
-                  Service needed
-                </option>
-                <option value="False Ceiling">False Ceiling</option>
-                <option value="Gypsum Work">Gypsum Work</option>
-                <option value="PVC Pelling">PVC Pelling</option>
-                <option value="Wallpapers">Wallpapers</option>
-                <option value="Customized Media Wall">Customized Media Wall</option>
-                <option value="Vinyl Flooring">Vinyl Flooring</option>
-                <option value="Artificial Grass">Artificial Grass</option>
+                <option value="Morning (10am – 1pm)">Morning (10am – 1pm)</option>
+                <option value="Afternoon (1pm – 5pm)">Afternoon (1pm – 5pm)</option>
+                <option value="Evening (5pm – 10pm)">Evening (5pm – 10pm)</option>
               </select>
+            </div>
 
-              <input
-                name="area"
-                required
-                maxLength={80}
-                placeholder="Your area / city (e.g. DHA Gujranwala)"
+            <div>
+              <label htmlFor="contact-message" className="sr-only">Project details or message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows={4}
+                maxLength={1000}
+                placeholder="Room size, design idea or anything you'd like us to know"
+                aria-label="Room size, design idea or project details"
                 className={inputClass}
               />
             </div>
 
-            <select
-              name="time"
-              defaultValue="Morning (10am – 1pm)"
-              className={inputClass}
-            >
-              <option value="Morning (10am – 1pm)">Morning (10am – 1pm)</option>
-              <option value="Afternoon (1pm – 5pm)">Afternoon (1pm – 5pm)</option>
-              <option value="Evening (5pm – 10pm)">Evening (5pm – 10pm)</option>
-            </select>
-
-            <textarea
-              name="message"
-              rows={4}
-              maxLength={1000}
-              placeholder="Room size, design idea or anything you'd like us to know"
-              className={inputClass}
-            />
-
             <button
               type="submit"
+              aria-label="Send Enquiry to H-S Interiors via WhatsApp"
               className="inline-flex w-full items-center justify-center gap-3 bg-charcoal px-8 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-white transition-all hover:bg-gold shadow-sm rounded-full"
             >
               Send Enquiry <ArrowRight className="h-4 w-4" />

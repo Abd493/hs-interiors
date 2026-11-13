@@ -84,7 +84,9 @@ export default function Portfolio() {
           {displayedProjects.map((project, idx) => (
             <button
               key={project.title}
+              type="button"
               onClick={() => setActiveModalIdx(idx)}
+              aria-label={`View project: ${project.title} in ${project.cat}`}
               className="group relative block w-full overflow-hidden rounded-2xl shadow-soft text-left border border-border hover:border-gold/70 hover:shadow-lg transition-all duration-300 bg-white"
             >
               <ProgressiveImage

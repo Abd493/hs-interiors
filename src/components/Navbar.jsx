@@ -56,7 +56,7 @@ export default function Navbar() {
         <Logo light={false} />
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Main Navigation" className="hidden items-center gap-7 lg:flex">
           {navLinks.map(([label, href]) => (
             <a
               key={href}
@@ -78,9 +78,12 @@ export default function Navbar() {
 
         {/* Mobile menu trigger */}
         <button
+          type="button"
           className="lg:hidden text-foreground p-1.5 rounded-lg hover:bg-muted transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menu"
+          aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -88,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Nav dropdown */}
       {mobileOpen && (
-        <nav className="flex flex-col gap-3 border-t border-border bg-white px-6 py-6 shadow-lg lg:hidden">
+        <nav id="mobile-navigation" aria-label="Mobile Navigation" className="flex flex-col gap-3 border-t border-border bg-white px-6 py-6 shadow-lg lg:hidden">
           {navLinks.map(([label, href]) => (
             <a
               key={href}

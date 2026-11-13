@@ -29,6 +29,14 @@ export default function BeforeAfter() {
     isDragging.current = false;
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'ArrowLeft') {
+      setSliderPosition((pos) => Math.max(0, pos - 5));
+    } else if (e.key === 'ArrowRight') {
+      setSliderPosition((pos) => Math.min(100, pos + 5));
+    }
+  };
+
   return (
     <div
       ref={containerRef}
@@ -36,6 +44,8 @@ export default function BeforeAfter() {
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
+      role="region"
+      aria-label="Before and after renovation visual comparison"
     >
       {/* After image: Responsive Fast + 4K WebP */}
       <picture>
@@ -85,9 +95,19 @@ export default function BeforeAfter() {
         className="absolute inset-y-0 w-[2px] bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"
         style={{ left: `${sliderPosition}%` }}
       >
-        <span className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-charcoal shadow-2xl border border-border">
+        <button
+          type="button"
+          role="slider"
+          aria-label="Drag or use left and right arrow keys to compare before and after renovation"
+          aria-valuenow={Math.round(sliderPosition)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          tabIndex={0}
+          onKeyDown={handleKeyDown}
+          className="absolute top-1/2 left-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-charcoal shadow-2xl border border-border focus:outline-none focus:ring-2 focus:ring-gold"
+        >
           <MoveHorizontal className="h-5 w-5" />
-        </span>
+        </button>
       </div>
     </div>
   );
